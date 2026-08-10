@@ -1,0 +1,1 @@
+{"name":"mb-wp-pay-v2","version":"2.0.0","private":true,"scripts":{"start":"node server.js","print-agent":"node print-agent.js"},"engines":{"node":">=18"}}

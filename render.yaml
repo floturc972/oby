@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: mb-wp-pay-v2-demo
+    env: docker
+    plan: free
+    healthCheckPath: /api/health

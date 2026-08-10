@@ -1,0 +1,706 @@
+{
+  "venue": {
+    "name": "Madiana Bowling by West Paradise",
+    "currency": "EUR",
+    "taxIncluded": true
+  },
+  "users": [
+    {
+      "id": "u1",
+      "name": "Administrateur",
+      "email": "admin@mbwp.demo",
+      "password": "Demo2026!",
+      "role": "ADMIN"
+    },
+    {
+      "id": "u2",
+      "name": "Bar / Cuisine",
+      "email": "bar@mbwp.demo",
+      "password": "Demo2026!",
+      "role": "KITCHEN"
+    },
+    {
+      "id": "u3",
+      "name": "Manager",
+      "email": "manager@mbwp.demo",
+      "password": "Demo2026!",
+      "role": "MANAGER"
+    }
+  ],
+  "categories": [
+    {
+      "id": "c1",
+      "name": "Boissons",
+      "icon": "🥤",
+      "sort": 1,
+      "active": true,
+      "parentId": null
+    },
+    {
+      "id": "c2",
+      "name": "Salé & Sucré",
+      "icon": "🍔",
+      "sort": 2,
+      "active": true,
+      "parentId": null
+    },
+    {
+      "id": "c3",
+      "name": "Cocktails avec alcool",
+      "icon": "🍹",
+      "sort": 1,
+      "active": true,
+      "parentId": "c1"
+    },
+    {
+      "id": "c4",
+      "name": "Softs",
+      "icon": "🥤",
+      "sort": 2,
+      "active": true,
+      "parentId": "c1"
+    },
+    {
+      "id": "c5",
+      "name": "Burgers",
+      "icon": "🍔",
+      "sort": 1,
+      "active": true,
+      "parentId": "c2"
+    },
+    {
+      "id": "c6",
+      "name": "Snacks",
+      "icon": "🍟",
+      "sort": 2,
+      "active": true,
+      "parentId": "c2"
+    }
+  ],
+  "products": [
+    {
+      "id": "p1",
+      "sku": "BUR-CHEESE",
+      "name": "Cheeseburger",
+      "description": "Steak grillé, cheddar, salade et sauce maison.",
+      "categoryId": "c5",
+      "priceHt": 15,
+      "taxRate": 20,
+      "cost": 6.2,
+      "stock": 41,
+      "active": true,
+      "featured": true,
+      "image": ""
+    },
+    {
+      "id": "p2",
+      "sku": "BUR-BACON",
+      "name": "Burger Bacon",
+      "description": "Steak grillé, bacon croustillant, cheddar et sauce barbecue.",
+      "categoryId": "c5",
+      "priceHt": 16.67,
+      "taxRate": 20,
+      "cost": 7.4,
+      "stock": 28,
+      "active": true,
+      "featured": true,
+      "image": ""
+    },
+    {
+      "id": "p3",
+      "sku": "DRK-COCA",
+      "name": "Coca-Cola 33 cl",
+      "description": "Boisson fraîche servie en bouteille.",
+      "categoryId": "c4",
+      "priceHt": 2.92,
+      "taxRate": 20,
+      "cost": 0.65,
+      "stock": 90,
+      "active": true,
+      "featured": false,
+      "image": ""
+    },
+    {
+      "id": "p4",
+      "sku": "DRK-HEIN",
+      "name": "Bière locale",
+      "description": "Bière fraîche locale, 33 cl.",
+      "categoryId": "c4",
+      "priceHt": 5.83,
+      "taxRate": 20,
+      "cost": 1.6,
+      "stock": 41,
+      "active": true,
+      "featured": false,
+      "image": ""
+    },
+    {
+      "id": "p5",
+      "sku": "SNK-FRITES",
+      "name": "Frites maison",
+      "description": "Pommes de terre fraîches, sauce au choix.",
+      "categoryId": "c6",
+      "priceHt": 4.17,
+      "taxRate": 20,
+      "cost": 1.1,
+      "stock": 55,
+      "active": true,
+      "featured": false,
+      "image": ""
+    },
+    {
+      "id": "p6",
+      "sku": "SNK-NACHOS",
+      "name": "Nachos fromage",
+      "description": "Chips de maïs, fromage fondu et salsa.",
+      "categoryId": "c6",
+      "priceHt": 7.5,
+      "taxRate": 20,
+      "cost": 2.85,
+      "stock": 31,
+      "active": true,
+      "featured": true,
+      "image": ""
+    },
+    {
+      "id": "p7",
+      "sku": "CKT-MOJITO",
+      "name": "Mojito",
+      "description": "Rhum blanc, sucre de canne, citron vert, menthe fraîche et eau gazeuse.",
+      "categoryId": "c3",
+      "priceHt": 8.33,
+      "taxRate": 20,
+      "cost": 2.5,
+      "stock": 37,
+      "active": true,
+      "featured": true,
+      "image": ""
+    }
+  ],
+  "lanes": [
+    {
+      "id": "l1",
+      "number": 1,
+      "token": "81ace758bc34de880f74b68a",
+      "active": true
+    },
+    {
+      "id": "l2",
+      "number": 2,
+      "token": "fe0e584c09124f52256daec1",
+      "active": true
+    },
+    {
+      "id": "l3",
+      "number": 3,
+      "token": "f9df8ca1f5f89a8a3585fa4e",
+      "active": true
+    },
+    {
+      "id": "l4",
+      "number": 4,
+      "token": "3e014a7b43e9abc1303e2c93",
+      "active": true
+    },
+    {
+      "id": "l5",
+      "number": 5,
+      "token": "cde44c2fd75583eecf2448ae",
+      "active": true
+    },
+    {
+      "id": "l6",
+      "number": 6,
+      "token": "c6b1f9e8882586aee2bd6354",
+      "active": true
+    },
+    {
+      "id": "l7",
+      "number": 7,
+      "token": "1f5d5bff11895fd8a1ac51f5",
+      "active": true
+    },
+    {
+      "id": "l8",
+      "number": 8,
+      "token": "83a171d82865bbf16d023966",
+      "active": true
+    }
+  ],
+  "orders": [
+    {
+      "id": "35174056-fe66-4e7e-86e0-1896348833fe",
+      "number": 1013,
+      "laneId": "l1",
+      "lane": 1,
+      "items": [
+        {
+          "productId": "p4",
+          "name": "Bière locale",
+          "sku": "DRK-HEIN",
+          "priceHt": 5.83,
+          "taxRate": 20,
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 5.83,
+        "tax": 1.17,
+        "ttc": 7
+      },
+      "status": "NEW",
+      "printStatus": "PENDING",
+      "payment": null,
+      "createdAt": "2026-08-10T23:01:12.051Z",
+      "note": ""
+    },
+    {
+      "id": "fb485bdd-9817-4f46-b7be-21e0793759f4",
+      "number": 1012,
+      "laneId": "l1",
+      "lane": 1,
+      "items": [
+        {
+          "productId": "p3",
+          "name": "Coca-Cola 33 cl",
+          "sku": "DRK-COCA",
+          "priceHt": 2.92,
+          "taxRate": 20,
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 2.92,
+        "tax": 0.58,
+        "ttc": 3.5
+      },
+      "status": "NEW",
+      "printStatus": "PENDING",
+      "payment": null,
+      "createdAt": "2026-08-10T22:57:14.699Z",
+      "note": ""
+    },
+    {
+      "id": "9e3e04bf-9477-46c9-bce9-7974c0d0d460",
+      "number": 1011,
+      "laneId": "l1",
+      "lane": 1,
+      "items": [
+        {
+          "productId": "p4",
+          "name": "Bière locale",
+          "sku": "DRK-HEIN",
+          "priceHt": 5.83,
+          "taxRate": 20,
+          "qty": 2
+        }
+      ],
+      "total": {
+        "ht": 11.66,
+        "tax": 2.33,
+        "ttc": 13.99
+      },
+      "status": "AWAITING_PAYMENT",
+      "printStatus": "PENDING",
+      "payment": {
+        "provider": "Stripe",
+        "status": "PENDING",
+        "sessionId": "cs_live_a1ZoSDqhqbsNtDjjUWt7OYw3qNo777eFLY2UHUCb48vGrmCsaOhbVcWT6h"
+      },
+      "createdAt": "2026-08-10T22:21:40.611Z",
+      "note": ""
+    },
+    {
+      "id": "0453b33d-f87d-4379-bbb2-b4b80c75d394",
+      "number": 1010,
+      "laneId": "l1",
+      "lane": 1,
+      "items": [
+        {
+          "productId": "p4",
+          "name": "Bière locale",
+          "sku": "DRK-HEIN",
+          "priceHt": 5.83,
+          "taxRate": 20,
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 5.83,
+        "tax": 1.17,
+        "ttc": 7
+      },
+      "status": "AWAITING_PAYMENT",
+      "printStatus": "PENDING",
+      "payment": {
+        "provider": "Stripe",
+        "status": "PENDING",
+        "sessionId": "cs_live_a1zf6eQOtQyEerxeC89XC0mCv5VY0xc630EHgWHs2oAMUbs9EaEY6w8iok"
+      },
+      "createdAt": "2026-08-10T22:20:42.056Z",
+      "note": ""
+    },
+    {
+      "id": "8d27078e-4a43-4add-a23a-a0fa7dca9ecb",
+      "number": 1009,
+      "laneId": "l1",
+      "lane": 1,
+      "items": [
+        {
+          "productId": "p4",
+          "name": "Bière locale",
+          "sku": "DRK-HEIN",
+          "priceHt": 5.83,
+          "taxRate": 20,
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 5.83,
+        "tax": 1.17,
+        "ttc": 7
+      },
+      "status": "AWAITING_PAYMENT",
+      "printStatus": "PENDING",
+      "payment": {
+        "provider": "Stripe",
+        "status": "PENDING"
+      },
+      "createdAt": "2026-08-10T22:18:52.598Z",
+      "note": ""
+    },
+    {
+      "id": "e8c9634d-5b4a-457c-8710-4cd9423811cb",
+      "number": 1008,
+      "laneId": "l1",
+      "lane": 1,
+      "items": [
+        {
+          "productId": "p4",
+          "name": "Bière locale",
+          "sku": "DRK-HEIN",
+          "priceHt": 5.83,
+          "taxRate": 20,
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 5.83,
+        "tax": 1.17,
+        "ttc": 7
+      },
+      "status": "AWAITING_PAYMENT",
+      "printStatus": "PENDING",
+      "payment": {
+        "provider": "Stripe",
+        "status": "PENDING"
+      },
+      "createdAt": "2026-08-10T22:18:12.077Z",
+      "note": ""
+    },
+    {
+      "id": "e1138401-5c20-4cb5-9e90-d5bf18fcb419",
+      "number": 1007,
+      "laneId": "l1",
+      "lane": 1,
+      "items": [
+        {
+          "productId": "p3",
+          "name": "Coca-Cola 33 cl",
+          "sku": "DRK-COCA",
+          "priceHt": 2.92,
+          "taxRate": 20,
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 2.92,
+        "tax": 0.58,
+        "ttc": 3.5
+      },
+      "status": "AWAITING_PAYMENT",
+      "printStatus": "PENDING",
+      "payment": {
+        "provider": "Stripe",
+        "status": "PENDING"
+      },
+      "createdAt": "2026-08-10T22:17:03.784Z",
+      "note": ""
+    },
+    {
+      "id": "a3f3494b-f655-4144-9bb3-19daa719c74b",
+      "number": 1006,
+      "laneId": "l1",
+      "lane": 1,
+      "items": [
+        {
+          "productId": "p3",
+          "name": "Coca-Cola 33 cl",
+          "sku": "DRK-COCA",
+          "priceHt": 2.92,
+          "taxRate": 20,
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 2.92,
+        "tax": 0.58,
+        "ttc": 3.5
+      },
+      "status": "AWAITING_PAYMENT",
+      "printStatus": "PENDING",
+      "payment": {
+        "provider": "Stripe",
+        "status": "PENDING"
+      },
+      "createdAt": "2026-08-10T22:16:59.219Z",
+      "note": ""
+    },
+    {
+      "id": "62feb79c-f8ee-4f2f-b2f9-7c41c64683fa",
+      "number": 1005,
+      "laneId": "l1",
+      "lane": 1,
+      "items": [
+        {
+          "productId": "p3",
+          "name": "Coca-Cola 33 cl",
+          "sku": "DRK-COCA",
+          "priceHt": 2.92,
+          "taxRate": 20,
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 2.92,
+        "tax": 0.58,
+        "ttc": 3.5
+      },
+      "status": "AWAITING_PAYMENT",
+      "printStatus": "PENDING",
+      "payment": {
+        "provider": "Stripe",
+        "status": "PENDING"
+      },
+      "createdAt": "2026-08-10T22:16:52.091Z",
+      "note": ""
+    },
+    {
+      "id": "c243a3ca-6db4-433c-a6d9-7c5dd3dcec42",
+      "number": 1004,
+      "laneId": "l1",
+      "lane": 1,
+      "items": [
+        {
+          "productId": "p3",
+          "name": "Coca-Cola 33 cl",
+          "sku": "DRK-COCA",
+          "priceHt": 2.92,
+          "taxRate": 20,
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 2.92,
+        "tax": 0.58,
+        "ttc": 3.5
+      },
+      "status": "AWAITING_PAYMENT",
+      "printStatus": "PENDING",
+      "payment": {
+        "provider": "Stripe",
+        "status": "PENDING"
+      },
+      "createdAt": "2026-08-10T22:16:46.257Z",
+      "note": ""
+    },
+    {
+      "id": "ff56601f-8590-4c58-8e43-1de3a59293e0",
+      "number": 1003,
+      "laneId": "l1",
+      "lane": 1,
+      "items": [
+        {
+          "productId": "p7",
+          "name": "Mojito",
+          "sku": "CKT-MOJITO",
+          "priceHt": 8.33,
+          "taxRate": 20,
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 8.33,
+        "tax": 1.67,
+        "ttc": 10
+      },
+      "status": "SERVED",
+      "printStatus": "PENDING",
+      "payment": null,
+      "createdAt": "2026-08-10T21:01:29.358Z",
+      "note": ""
+    },
+    {
+      "id": "605cbfe0-9793-4d0d-a91b-c3d84c436ea8",
+      "number": 1002,
+      "laneId": "l3",
+      "lane": 3,
+      "items": [
+        {
+          "productId": "p1",
+          "name": "Cheeseburger",
+          "sku": "BUR-CHEESE",
+          "priceHt": 15,
+          "taxRate": 20,
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 15,
+        "tax": 3,
+        "ttc": 18
+      },
+      "status": "SERVED",
+      "createdAt": "2026-08-10T20:52:25.234Z",
+      "note": ""
+    },
+    {
+      "id": "18528d30-8e92-48af-9bf5-a56684933416",
+      "number": 1001,
+      "laneId": "l1",
+      "lane": 1,
+      "items": [
+        {
+          "productId": "p3",
+          "name": "Coca-Cola 33 cl",
+          "sku": "DRK-COCA",
+          "priceHt": 2.92,
+          "taxRate": 20,
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 2.92,
+        "tax": 0.58,
+        "ttc": 3.5
+      },
+      "status": "SERVED",
+      "createdAt": "2026-08-10T20:52:15.800Z",
+      "note": ""
+    }
+  ],
+  "audit": [
+    {
+      "id": "25282d06-f34b-4406-b91b-b0de8927164b",
+      "at": "2026-08-10T23:01:12.051Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1013 · Piste 1 · 7.00 €"
+    },
+    {
+      "id": "1d30de54-39c1-41d7-bfce-bfd73fc90da2",
+      "at": "2026-08-10T22:57:14.699Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1012 · Piste 1 · 3.50 €"
+    },
+    {
+      "id": "b33f5b49-d72c-45f9-852e-6b4bcc00c157",
+      "at": "2026-08-10T22:22:09.264Z",
+      "user": "Administrateur",
+      "action": "Statut commande",
+      "detail": "#1001 → SERVED"
+    },
+    {
+      "id": "c27fe871-14b4-4190-b7fa-fc323c110bc3",
+      "at": "2026-08-10T22:22:07.885Z",
+      "user": "Administrateur",
+      "action": "Statut commande",
+      "detail": "#1002 → SERVED"
+    },
+    {
+      "id": "60897a2f-ecc4-4a49-954d-18d4f6866a7b",
+      "at": "2026-08-10T22:22:06.447Z",
+      "user": "Administrateur",
+      "action": "Statut commande",
+      "detail": "#1003 → SERVED"
+    },
+    {
+      "id": "d0caafd6-c0b1-4a14-b7a6-50650db3f419",
+      "at": "2026-08-10T22:21:40.611Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1011 · Piste 1 · 13.99 €"
+    },
+    {
+      "id": "a07c502d-6ea7-49b8-a5f8-881cf00eb993",
+      "at": "2026-08-10T22:20:42.056Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1010 · Piste 1 · 7.00 €"
+    },
+    {
+      "id": "95849a8a-565a-4ff7-b377-bb0c1206346e",
+      "at": "2026-08-10T22:18:52.598Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1009 · Piste 1 · 7.00 €"
+    },
+    {
+      "id": "8274b061-3651-4409-b03f-58ffaf90f25b",
+      "at": "2026-08-10T22:18:12.077Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1008 · Piste 1 · 7.00 €"
+    },
+    {
+      "id": "b6d26674-5ed8-4371-9b54-7e4a67e5e4ca",
+      "at": "2026-08-10T22:17:03.784Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1007 · Piste 1 · 3.50 €"
+    },
+    {
+      "id": "06e5fe5f-5338-4afe-ae13-222073b36604",
+      "at": "2026-08-10T22:16:59.219Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1006 · Piste 1 · 3.50 €"
+    },
+    {
+      "id": "424dbdaa-8cd9-4dfa-adf0-456dc707a34c",
+      "at": "2026-08-10T22:16:52.091Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1005 · Piste 1 · 3.50 €"
+    },
+    {
+      "id": "92306ee7-f43f-4702-b7a2-5c7eee941fd0",
+      "at": "2026-08-10T22:16:46.257Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1004 · Piste 1 · 3.50 €"
+    },
+    {
+      "id": "968e6905-d7de-46c0-a2d5-c2aa9975f628",
+      "at": "2026-08-10T21:01:29.358Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1003 · Piste 1 · 10.00 €"
+    },
+    {
+      "id": "4abc7cb1-ba49-48ea-992a-d4c1ad1652d5",
+      "at": "2026-08-10T20:52:25.234Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1002 · Piste 3 · 18.00 €"
+    },
+    {
+      "id": "cd19055e-f82e-4892-a081-e3f91e750f8f",
+      "at": "2026-08-10T20:52:15.800Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1001 · Piste 1 · 3.50 €"
+    }
+  ]
+}
