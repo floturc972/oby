@@ -1,8 +1,13 @@
 {
   "venue": {
-    "name": "Madiana Bowling by West Paradise",
+    "name": "Madiana Bowling by WP",
     "currency": "EUR",
-    "taxIncluded": true
+    "taxIncluded": true,
+    "printer": {
+      "host": "192.168.1.6",
+      "port": 9100,
+      "enabled": true
+    }
   },
   "users": [
     {
@@ -45,16 +50,8 @@
       "parentId": null
     },
     {
-      "id": "c3",
-      "name": "Cocktails avec alcool",
-      "icon": "🍹",
-      "sort": 1,
-      "active": true,
-      "parentId": "c1"
-    },
-    {
       "id": "c4",
-      "name": "Softs",
+      "name": "Soft",
       "icon": "🥤",
       "sort": 2,
       "active": true,
@@ -75,6 +72,78 @@
       "sort": 2,
       "active": true,
       "parentId": "c2"
+    },
+    {
+      "id": "oby-hennys",
+      "name": "Les Henny's",
+      "icon": "🍸",
+      "sort": 10,
+      "active": true,
+      "parentId": "c1"
+    },
+    {
+      "id": "oby-citronnes",
+      "name": "Les Citronnés",
+      "icon": "🍋",
+      "sort": 11,
+      "active": true,
+      "parentId": "c1"
+    },
+    {
+      "id": "oby-renverses",
+      "name": "Les Renversés",
+      "icon": "🍹",
+      "sort": 12,
+      "active": true,
+      "parentId": "c1"
+    },
+    {
+      "id": "oby-iconiques",
+      "name": "Les Iconiques",
+      "icon": "⭐",
+      "sort": 13,
+      "active": true,
+      "parentId": "c1"
+    },
+    {
+      "id": "oby-lavish",
+      "name": "Lavish",
+      "icon": "🥂",
+      "sort": 14,
+      "active": true,
+      "parentId": "c1"
+    },
+    {
+      "id": "menu-smoothies",
+      "name": "Smoothie",
+      "icon": "🥭",
+      "sort": 4,
+      "parentId": "c1",
+      "active": true
+    },
+    {
+      "id": "menu-wines",
+      "name": "Vins et Champagnes",
+      "icon": "🍷",
+      "sort": 5,
+      "parentId": "c1",
+      "active": true
+    },
+    {
+      "id": "menu-ices",
+      "name": "Glaces",
+      "icon": "🍨",
+      "sort": 5,
+      "parentId": "c2",
+      "active": true
+    },
+    {
+      "id": "menu-tapas",
+      "name": "Tapas",
+      "icon": "🍤",
+      "sort": 6,
+      "parentId": "c2",
+      "active": true
     }
   ],
   "products": [
@@ -85,12 +154,18 @@
       "description": "Steak grillé, cheddar, salade et sauce maison.",
       "categoryId": "c5",
       "priceHt": 15,
-      "taxRate": 20,
+      "taxRate": 2.1,
       "cost": 6.2,
       "stock": 41,
       "active": true,
       "featured": true,
-      "image": ""
+      "image": "",
+      "componentProductIds": [
+        "p2"
+      ],
+      "upsellProductIds": [],
+      "priceTtc": 15.31,
+      "optionSetIds": []
     },
     {
       "id": "p2",
@@ -104,7 +179,9 @@
       "stock": 28,
       "active": true,
       "featured": true,
-      "image": ""
+      "image": "",
+      "priceTtc": 20,
+      "optionSetIds": []
     },
     {
       "id": "p3",
@@ -115,10 +192,12 @@
       "priceHt": 2.92,
       "taxRate": 20,
       "cost": 0.65,
-      "stock": 88,
+      "stock": 84,
       "active": true,
       "featured": false,
-      "image": ""
+      "image": "",
+      "priceTtc": 3.5,
+      "optionSetIds": []
     },
     {
       "id": "p4",
@@ -132,7 +211,9 @@
       "stock": 34,
       "active": true,
       "featured": false,
-      "image": ""
+      "image": "",
+      "priceTtc": 7,
+      "optionSetIds": []
     },
     {
       "id": "p5",
@@ -143,10 +224,12 @@
       "priceHt": 4.17,
       "taxRate": 20,
       "cost": 1.1,
-      "stock": 55,
+      "stock": 54,
       "active": true,
       "featured": false,
-      "image": ""
+      "image": "",
+      "priceTtc": 5,
+      "optionSetIds": []
     },
     {
       "id": "p6",
@@ -160,21 +243,701 @@
       "stock": 31,
       "active": true,
       "featured": true,
-      "image": ""
+      "image": "",
+      "priceTtc": 9,
+      "optionSetIds": []
     },
     {
       "id": "p7",
-      "sku": "CKT-MOJITO",
+      "sku": "OBY-MOJITO",
       "name": "Mojito",
-      "description": "Rhum blanc, sucre de canne, citron vert, menthe fraîche et eau gazeuse.",
-      "categoryId": "c3",
-      "priceHt": 8.33,
-      "taxRate": 20,
+      "description": "",
+      "categoryId": "oby-citronnes",
+      "priceHt": 9.22,
+      "taxRate": 8.5,
       "cost": 2.5,
-      "stock": 34,
+      "stock": 14,
       "active": true,
       "featured": true,
-      "image": ""
+      "image": "/images/products/BjuG1bXqnR-1780103213.2901.png",
+      "componentProductIds": [],
+      "upsellProductIds": [
+        "p5",
+        "p6"
+      ],
+      "source": "OBYPAY",
+      "priceTtc": 10,
+      "optionSetIds": []
+    },
+    {
+      "id": "oby-apple-hennessy",
+      "sku": "OBY-APPLE-HENNESSY",
+      "name": "Apple Hennessy",
+      "description": "Cocktail à base de liqueur de pomme et d'Hennessy",
+      "categoryId": "oby-hennys",
+      "priceHt": 13.82,
+      "taxRate": 8.5,
+      "image": "/images/products/YnLCSP4dES-1780102825.8119.png",
+      "active": true,
+      "cost": 0,
+      "stock": 98,
+      "featured": false,
+      "componentProductIds": [],
+      "upsellProductIds": [
+        "p5",
+        "p6"
+      ],
+      "source": "OBYPAY",
+      "priceTtc": 15,
+      "optionSetIds": []
+    },
+    {
+      "id": "oby-apple-hennessy-royal",
+      "sku": "OBY-APPLE-HENNESSY-ROYAL",
+      "name": "Apple Hennessy Royal",
+      "description": "Cocktail à base de liqueur de pomme et d'Hennessy + Champagne",
+      "categoryId": "oby-hennys",
+      "priceHt": 15.67,
+      "taxRate": 8.5,
+      "image": "/images/products/STDp4Qxmzq-1780103088.3186.png",
+      "active": true,
+      "cost": 0,
+      "stock": 98,
+      "featured": false,
+      "componentProductIds": [],
+      "upsellProductIds": [
+        "p5",
+        "p6"
+      ],
+      "source": "OBYPAY",
+      "priceTtc": 17,
+      "optionSetIds": []
+    },
+    {
+      "id": "oby-hennessy-amaretto",
+      "sku": "OBY-HENNESSY-AMARETTO",
+      "name": "Hennessy Amaretto",
+      "description": "Cocktail à base d'Amaretto et de Hennessy",
+      "categoryId": "oby-hennys",
+      "priceHt": 13.82,
+      "taxRate": 8.5,
+      "image": "/images/products/3TwuvZS9bK-1780103116.2611.png",
+      "active": true,
+      "cost": 0,
+      "stock": 100,
+      "featured": false,
+      "componentProductIds": [],
+      "upsellProductIds": [
+        "p5",
+        "p6"
+      ],
+      "source": "OBYPAY",
+      "priceTtc": 15,
+      "optionSetIds": []
+    },
+    {
+      "id": "oby-hennessy-amaretto-royal",
+      "sku": "OBY-HENNESSY-AMARETTO-ROYAL",
+      "name": "Hennessy Amaretto Royal",
+      "description": "Cocktail à base d'Amaretto et de Hennessy + Champagne",
+      "categoryId": "oby-hennys",
+      "priceHt": 15.67,
+      "taxRate": 8.5,
+      "image": "/images/products/Dkyh91tKsS-1780103161.9434.png",
+      "active": true,
+      "cost": 0,
+      "stock": 100,
+      "featured": false,
+      "componentProductIds": [],
+      "upsellProductIds": [
+        "p5",
+        "p6"
+      ],
+      "source": "OBYPAY",
+      "priceTtc": 17,
+      "optionSetIds": []
+    },
+    {
+      "id": "oby-hennessy-mule",
+      "sku": "OBY-HENNESSY-MULE",
+      "name": "Hennesy Mule",
+      "description": "Cocktail à base d'Hennessy et de Ginger Beer",
+      "categoryId": "oby-hennys",
+      "priceHt": 12.9,
+      "taxRate": 8.5,
+      "image": "/images/products/N8U6z8fipm-1780104022.7586.png",
+      "active": true,
+      "cost": 0,
+      "stock": 100,
+      "featured": false,
+      "componentProductIds": [],
+      "upsellProductIds": [
+        "p5",
+        "p6"
+      ],
+      "source": "OBYPAY",
+      "priceTtc": 14,
+      "optionSetIds": []
+    },
+    {
+      "id": "oby-hennessy-verre",
+      "sku": "OBY-HENNESSY-VERRE",
+      "name": "Hennessy Le Verre",
+      "description": "",
+      "categoryId": "oby-hennys",
+      "priceHt": 9.22,
+      "taxRate": 8.5,
+      "image": "/images/products/wine-product.webp",
+      "active": true,
+      "cost": 0,
+      "stock": 100,
+      "featured": false,
+      "componentProductIds": [],
+      "upsellProductIds": [
+        "p5",
+        "p6"
+      ],
+      "source": "OBYPAY",
+      "priceTtc": 10,
+      "optionSetIds": []
+    },
+    {
+      "id": "oby-mojito-sirop",
+      "sku": "OBY-MOJITO-SIROP",
+      "name": "Mojito Sirop",
+      "description": "",
+      "categoryId": "oby-citronnes",
+      "priceHt": 9.22,
+      "taxRate": 8.5,
+      "image": "/images/products/82MWYQB583-1780103270.3533.png",
+      "active": true,
+      "cost": 0,
+      "stock": 98,
+      "featured": false,
+      "componentProductIds": [],
+      "upsellProductIds": [
+        "p5",
+        "p6"
+      ],
+      "source": "OBYPAY",
+      "priceTtc": 10,
+      "optionSetIds": [
+        "set-sirops"
+      ]
+    },
+    {
+      "id": "oby-mojito-royal",
+      "sku": "OBY-MOJITO-ROYAL",
+      "name": "Mojito Royal",
+      "description": "",
+      "categoryId": "oby-citronnes",
+      "priceHt": 14.75,
+      "taxRate": 8.5,
+      "image": "/images/products/Hx8SoCVXPe-1780103385.3602.png",
+      "active": true,
+      "cost": 0,
+      "stock": 100,
+      "featured": false,
+      "componentProductIds": [],
+      "upsellProductIds": [
+        "p5",
+        "p6"
+      ],
+      "source": "OBYPAY",
+      "priceTtc": 16,
+      "optionSetIds": []
+    },
+    {
+      "id": "oby-caipirinia",
+      "sku": "OBY-CAIPIRINIA",
+      "name": "Caïpirinia",
+      "description": "",
+      "categoryId": "oby-citronnes",
+      "priceHt": 9.22,
+      "taxRate": 8.5,
+      "image": "/images/products/NBgsZududD-1780103423.8755.png",
+      "active": true,
+      "cost": 0,
+      "stock": 100,
+      "featured": false,
+      "componentProductIds": [],
+      "upsellProductIds": [
+        "p5",
+        "p6"
+      ],
+      "source": "OBYPAY",
+      "priceTtc": 10,
+      "optionSetIds": []
+    },
+    {
+      "id": "oby-caipirinia-sirop",
+      "sku": "OBY-CAIPIRINIA-SIROP",
+      "name": "Caïpirinia Sirop",
+      "description": "",
+      "categoryId": "oby-citronnes",
+      "priceHt": 9.22,
+      "taxRate": 8.5,
+      "image": "/images/products/DKBFq3DgZ3-1780103460.7651.png",
+      "active": true,
+      "cost": 0,
+      "stock": 100,
+      "featured": false,
+      "componentProductIds": [],
+      "upsellProductIds": [
+        "p5",
+        "p6"
+      ],
+      "source": "OBYPAY",
+      "priceTtc": 10,
+      "optionSetIds": [
+        "set-sirops"
+      ]
+    },
+    {
+      "id": "oby-caipirinia-royal",
+      "sku": "OBY-CAIPIRINIA-ROYAL",
+      "name": "Caïpirinia Royal",
+      "description": "",
+      "categoryId": "oby-citronnes",
+      "priceHt": 14.75,
+      "taxRate": 8.5,
+      "image": "/images/products/KTa9s63Gsf-1780103493.8611.png",
+      "active": true,
+      "cost": 0,
+      "stock": 100,
+      "featured": false,
+      "componentProductIds": [],
+      "upsellProductIds": [
+        "p5",
+        "p6"
+      ],
+      "source": "OBYPAY",
+      "priceTtc": 16,
+      "optionSetIds": []
+    },
+    {
+      "id": "oby-desperito",
+      "sku": "OBY-DESPERITO",
+      "name": "Despérito",
+      "description": "Mojito accompagné d'une Desperados",
+      "categoryId": "oby-renverses",
+      "priceHt": 12.9,
+      "taxRate": 8.5,
+      "image": "/images/products/fsof2qvo7e-1780103521.5965.png",
+      "active": true,
+      "cost": 0,
+      "stock": 100,
+      "featured": false,
+      "componentProductIds": [],
+      "upsellProductIds": [
+        "p5",
+        "p6"
+      ],
+      "source": "OBYPAY",
+      "optionGroups": [],
+      "priceTtc": 14,
+      "optionSetIds": [
+        "set-desperados"
+      ]
+    },
+    {
+      "id": "oby-desperinia",
+      "sku": "OBY-DESPERINIA",
+      "name": "Despérinia",
+      "description": "Caïpirinia accompagné d'une Desperados",
+      "categoryId": "oby-renverses",
+      "priceHt": 12.9,
+      "taxRate": 8.5,
+      "image": "/images/products/HGGaHJSvhS-1780103550.1404.png",
+      "active": true,
+      "cost": 0,
+      "stock": 100,
+      "featured": false,
+      "componentProductIds": [],
+      "upsellProductIds": [
+        "p5",
+        "p6"
+      ],
+      "source": "OBYPAY",
+      "priceTtc": 14,
+      "optionGroups": [],
+      "optionSetIds": [
+        "set-desperados"
+      ]
+    },
+    {
+      "id": "oby-mai-tai",
+      "sku": "OBY-MAI-TAI",
+      "name": "Maï-Taï",
+      "description": "Rhum blanc, Rhum vieux, Triple sec, Citron, Orgeat",
+      "categoryId": "oby-iconiques",
+      "priceHt": 12.9,
+      "taxRate": 8.5,
+      "image": "/images/products/YwqTCUesD2-1780103575.4234.png",
+      "active": true,
+      "cost": 0,
+      "stock": 100,
+      "featured": false,
+      "componentProductIds": [],
+      "upsellProductIds": [
+        "p5",
+        "p6"
+      ],
+      "source": "OBYPAY",
+      "priceTtc": 14,
+      "optionSetIds": []
+    },
+    {
+      "id": "oby-flamant-rose",
+      "sku": "OBY-FLAMANT-ROSE",
+      "name": "Flamant Rose",
+      "description": "Purée de fraise, Triple sec, Champagne",
+      "categoryId": "oby-iconiques",
+      "priceHt": 11.98,
+      "taxRate": 8.5,
+      "image": "/images/products/EVcT5xn1rp-1780103609.8761.png",
+      "active": true,
+      "cost": 0,
+      "stock": 100,
+      "featured": false,
+      "componentProductIds": [],
+      "upsellProductIds": [
+        "p5",
+        "p6"
+      ],
+      "source": "OBYPAY",
+      "priceTtc": 13,
+      "optionSetIds": []
+    },
+    {
+      "id": "oby-pinacolada",
+      "sku": "OBY-PINACOLADA",
+      "name": "Pinacolada",
+      "description": "Rhum blanc, Ananas frais, Crème de coco, Lait concentré",
+      "categoryId": "oby-iconiques",
+      "priceHt": 11.98,
+      "taxRate": 8.5,
+      "image": "/images/products/fXBqt1Fawo-1780103649.3126.png",
+      "active": true,
+      "cost": 0,
+      "stock": 100,
+      "featured": false,
+      "componentProductIds": [],
+      "upsellProductIds": [
+        "p5",
+        "p6"
+      ],
+      "source": "OBYPAY",
+      "priceTtc": 13,
+      "optionSetIds": []
+    },
+    {
+      "id": "oby-caribean-mule",
+      "sku": "OBY-CARIBEAN-MULE",
+      "name": "Caribean Mule",
+      "description": "Rhum vieux, Citron, Ginger beer",
+      "categoryId": "oby-iconiques",
+      "priceHt": 11.06,
+      "taxRate": 8.5,
+      "image": "/images/products/AfSxq9MSzp-1780103721.0663.png",
+      "active": true,
+      "cost": 0,
+      "stock": 100,
+      "featured": false,
+      "componentProductIds": [],
+      "upsellProductIds": [
+        "p5",
+        "p6"
+      ],
+      "source": "OBYPAY",
+      "priceTtc": 12,
+      "optionSetIds": []
+    },
+    {
+      "id": "oby-moscow-mule",
+      "sku": "OBY-MOSCOW-MULE",
+      "name": "Moscow Mule",
+      "description": "Vodka, Citron, Ginger Beer",
+      "categoryId": "oby-iconiques",
+      "priceHt": 11.06,
+      "taxRate": 8.5,
+      "image": "/images/products/UzvMfc9SyQ-1780103746.5387.png",
+      "active": true,
+      "cost": 0,
+      "stock": 100,
+      "featured": false,
+      "componentProductIds": [],
+      "upsellProductIds": [
+        "p5",
+        "p6"
+      ],
+      "source": "OBYPAY",
+      "priceTtc": 12,
+      "optionSetIds": []
+    },
+    {
+      "id": "oby-eveil-sauvage",
+      "sku": "OBY-EVEIL-SAUVAGE",
+      "name": "Eveil Sauvage",
+      "description": "Rhum vieux infusé à la menthe, Amaretto, Citron, Limonade",
+      "categoryId": "oby-iconiques",
+      "priceHt": 13.82,
+      "taxRate": 8.5,
+      "image": "/images/products/J1uWjcPLdQ-1780103879.9167.png",
+      "active": true,
+      "cost": 0,
+      "stock": 100,
+      "featured": false,
+      "componentProductIds": [],
+      "upsellProductIds": [
+        "p5",
+        "p6"
+      ],
+      "source": "OBYPAY",
+      "priceTtc": 15,
+      "optionSetIds": []
+    },
+    {
+      "id": "oby-green-rush",
+      "sku": "OBY-GREEN-RUSH",
+      "name": "Green Rush",
+      "description": "Triple sec, Manzanita, Purée de pomme, Citron",
+      "categoryId": "oby-iconiques",
+      "priceHt": 12.9,
+      "taxRate": 8.5,
+      "image": "/images/products/UqKXSb1rEL-1780103925.5448.png",
+      "active": true,
+      "cost": 0,
+      "stock": 100,
+      "featured": false,
+      "componentProductIds": [],
+      "upsellProductIds": [
+        "p5",
+        "p6"
+      ],
+      "source": "OBYPAY",
+      "priceTtc": 14,
+      "optionSetIds": []
+    },
+    {
+      "id": "oby-screaming-orgasm",
+      "sku": "OBY-SCREAMING-ORGASM",
+      "name": "Screaming Orgasm",
+      "description": "Crème de Rhum vieux, Vodka, Amaretto, Sirop de caramel",
+      "categoryId": "oby-iconiques",
+      "priceHt": 13.82,
+      "taxRate": 8.5,
+      "image": "/images/products/X6EeKkPDmu-1780103839.6654.png",
+      "active": true,
+      "cost": 0,
+      "stock": 100,
+      "featured": false,
+      "componentProductIds": [],
+      "upsellProductIds": [
+        "p5",
+        "p6"
+      ],
+      "source": "OBYPAY",
+      "priceTtc": 15,
+      "optionSetIds": []
+    },
+    {
+      "id": "oby-spice-maison",
+      "sku": "OBY-SPICE-MAISON",
+      "name": "Spice Maison",
+      "description": "",
+      "categoryId": "oby-iconiques",
+      "priceHt": 3.69,
+      "taxRate": 8.5,
+      "image": "/images/products/6qmchsh8hm-1780104525.5515.png",
+      "active": true,
+      "cost": 0,
+      "stock": 100,
+      "featured": false,
+      "componentProductIds": [],
+      "upsellProductIds": [
+        "p5",
+        "p6"
+      ],
+      "source": "OBYPAY",
+      "priceTtc": 4,
+      "optionSetIds": []
+    },
+    {
+      "id": "oby-ti-punch",
+      "sku": "OBY-TI-PUNCH",
+      "name": "Ti Punch",
+      "description": "",
+      "categoryId": "oby-iconiques",
+      "priceHt": 7.37,
+      "taxRate": 8.5,
+      "image": "/images/products/wine-product.webp",
+      "active": true,
+      "cost": 0,
+      "stock": 100,
+      "featured": false,
+      "componentProductIds": [],
+      "upsellProductIds": [
+        "p5",
+        "p6"
+      ],
+      "source": "OBYPAY",
+      "priceTtc": 8,
+      "optionSetIds": []
+    },
+    {
+      "id": "oby-rhum-vieux",
+      "sku": "OBY-RHUM-VIEUX",
+      "name": "Rhum Vieux",
+      "description": "",
+      "categoryId": "oby-iconiques",
+      "priceHt": 9.22,
+      "taxRate": 8.5,
+      "image": "/images/products/wine-product.webp",
+      "active": true,
+      "cost": 0,
+      "stock": 100,
+      "featured": false,
+      "componentProductIds": [],
+      "upsellProductIds": [
+        "p5",
+        "p6"
+      ],
+      "source": "OBYPAY",
+      "priceTtc": 10,
+      "optionSetIds": []
+    },
+    {
+      "id": "oby-fireball",
+      "sku": "OBY-FIREBALL",
+      "name": "FireBall",
+      "description": "",
+      "categoryId": "oby-iconiques",
+      "priceHt": 5.53,
+      "taxRate": 8.5,
+      "image": "/images/products/wine-product.webp",
+      "active": true,
+      "cost": 0,
+      "stock": 100,
+      "featured": false,
+      "componentProductIds": [],
+      "upsellProductIds": [
+        "p5",
+        "p6"
+      ],
+      "source": "OBYPAY",
+      "priceTtc": 6,
+      "optionSetIds": []
+    },
+    {
+      "id": "oby-cocktail-semaine",
+      "sku": "OBY-COCKTAIL-SEMAINE",
+      "name": "Cocktail de la semaine",
+      "description": "",
+      "categoryId": "oby-iconiques",
+      "priceHt": 12.9,
+      "taxRate": 8.5,
+      "image": "/images/products/wine-product.webp",
+      "active": true,
+      "cost": 0,
+      "stock": 100,
+      "featured": false,
+      "componentProductIds": [],
+      "upsellProductIds": [
+        "p5",
+        "p6"
+      ],
+      "source": "OBYPAY",
+      "priceTtc": 14,
+      "optionSetIds": []
+    },
+    {
+      "id": "oby-lavish-cosmopolitain",
+      "sku": "OBY-LAVISH-COSMOPOLITAIN",
+      "name": "Lavish Cosmopolitain 25cl",
+      "description": "",
+      "categoryId": "oby-lavish",
+      "priceHt": 5.53,
+      "taxRate": 8.5,
+      "image": "/images/products/DSvsUD99I5-1785890527.4445.png",
+      "active": true,
+      "cost": 0,
+      "stock": 99,
+      "featured": false,
+      "componentProductIds": [],
+      "upsellProductIds": [
+        "p5",
+        "p6"
+      ],
+      "source": "OBYPAY",
+      "priceTtc": 6,
+      "optionSetIds": []
+    },
+    {
+      "id": "oby-lavish-mangotini",
+      "sku": "OBY-LAVISH-MANGOTINI",
+      "name": "Lavish Mangotini 25cl",
+      "description": "",
+      "categoryId": "oby-lavish",
+      "priceHt": 5.53,
+      "taxRate": 8.5,
+      "image": "/images/products/GunviBm65N-1785890574.1094.png",
+      "active": true,
+      "cost": 0,
+      "stock": 100,
+      "featured": false,
+      "componentProductIds": [],
+      "upsellProductIds": [
+        "p5",
+        "p6"
+      ],
+      "source": "OBYPAY",
+      "priceTtc": 6,
+      "optionSetIds": []
+    },
+    {
+      "id": "oby-lavish-gin-fizz",
+      "sku": "OBY-LAVISH-GIN-FIZZ",
+      "name": "Lavish Gin Fizz 25cl",
+      "description": "",
+      "categoryId": "oby-lavish",
+      "priceHt": 5.53,
+      "taxRate": 8.5,
+      "image": "/images/products/dXijIDP9Gq-1785890693.0729.png",
+      "active": true,
+      "cost": 0,
+      "stock": 100,
+      "featured": false,
+      "componentProductIds": [],
+      "upsellProductIds": [
+        "p5",
+        "p6"
+      ],
+      "source": "OBYPAY",
+      "priceTtc": 6,
+      "optionSetIds": []
+    },
+    {
+      "id": "oby-lavish-purple-grape",
+      "sku": "OBY-LAVISH-PURPLE-GRAPE",
+      "name": "Lavish Purple Grape 25cl",
+      "description": "",
+      "categoryId": "oby-lavish",
+      "priceHt": 5.53,
+      "taxRate": 8.5,
+      "image": "/images/products/S1wdFA4BPU-1785890640.0717.png",
+      "active": true,
+      "cost": 0,
+      "stock": 100,
+      "featured": false,
+      "componentProductIds": [],
+      "upsellProductIds": [
+        "p5",
+        "p6"
+      ],
+      "source": "OBYPAY",
+      "priceTtc": 6,
+      "optionSetIds": []
     }
   ],
   "lanes": [
@@ -182,52 +945,974 @@
       "id": "l1",
       "number": 1,
       "token": "81ace758bc34de880f74b68a",
-      "active": true
+      "active": true,
+      "label": "Piste 1-2"
     },
     {
       "id": "l2",
       "number": 2,
       "token": "fe0e584c09124f52256daec1",
-      "active": true
+      "active": true,
+      "label": "Piste 3-4"
     },
     {
       "id": "l3",
       "number": 3,
       "token": "f9df8ca1f5f89a8a3585fa4e",
-      "active": true
+      "active": true,
+      "label": "Piste 6"
     },
     {
       "id": "l4",
       "number": 4,
       "token": "3e014a7b43e9abc1303e2c93",
-      "active": true
-    },
-    {
-      "id": "l5",
-      "number": 5,
-      "token": "cde44c2fd75583eecf2448ae",
-      "active": true
-    },
-    {
-      "id": "l6",
-      "number": 6,
-      "token": "c6b1f9e8882586aee2bd6354",
-      "active": true
-    },
-    {
-      "id": "l7",
-      "number": 7,
-      "token": "1f5d5bff11895fd8a1ac51f5",
-      "active": true
-    },
-    {
-      "id": "l8",
-      "number": 8,
-      "token": "83a171d82865bbf16d023966",
-      "active": true
+      "active": true,
+      "label": "Piste 7-8"
     }
   ],
   "orders": [
+    {
+      "id": "b075c47c-cc5e-4e28-84a5-a69bef72a774",
+      "number": 1047,
+      "laneId": "l1",
+      "lane": 1,
+      "locationLabel": "Piste 1-2",
+      "customerFirstName": "flo",
+      "items": [
+        {
+          "productId": "p7",
+          "name": "Mojito",
+          "baseName": "Mojito",
+          "sku": "OBY-MOJITO",
+          "priceTtc": 10,
+          "priceHt": 9.22,
+          "taxRate": 8.5,
+          "qty": 1,
+          "options": [],
+          "components": []
+        },
+        {
+          "productId": "p5",
+          "name": "Frites maison",
+          "baseName": "Frites maison",
+          "sku": "SNK-FRITES",
+          "priceTtc": 5,
+          "priceHt": 4.17,
+          "taxRate": 20,
+          "qty": 1,
+          "options": [],
+          "components": []
+        }
+      ],
+      "stockConsumptions": [
+        {
+          "productId": "p7",
+          "qty": 1
+        },
+        {
+          "productId": "p5",
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 13.38,
+        "tax": 1.62,
+        "ttc": 15
+      },
+      "status": "AWAITING_PAYMENT",
+      "printStatus": "PENDING",
+      "payment": {
+        "provider": "Stripe",
+        "status": "PENDING",
+        "sessionId": "cs_test_b10fi9Lg28doUbUU2nkRqIpF5AJEJd8o458JNmJ6cZPvfy7zsM5LPe1lmj"
+      },
+      "createdAt": "2026-08-11T22:45:34.472Z",
+      "note": "",
+      "billing": null
+    },
+    {
+      "id": "b981f8bf-66a5-453e-81a9-83d9db3c41b6",
+      "number": 1046,
+      "laneId": "l1",
+      "lane": 1,
+      "locationLabel": "Piste 1-2",
+      "customerFirstName": "flo",
+      "items": [
+        {
+          "productId": "p3",
+          "name": "Coca-Cola 33 cl",
+          "baseName": "Coca-Cola 33 cl",
+          "sku": "DRK-COCA",
+          "priceTtc": 3.5,
+          "priceHt": 2.92,
+          "taxRate": 20,
+          "qty": 1,
+          "options": [],
+          "components": []
+        },
+        {
+          "productId": "p7",
+          "name": "Mojito",
+          "baseName": "Mojito",
+          "sku": "OBY-MOJITO",
+          "priceTtc": 10,
+          "priceHt": 9.22,
+          "taxRate": 8.5,
+          "qty": 1,
+          "options": [],
+          "components": []
+        }
+      ],
+      "stockConsumptions": [
+        {
+          "productId": "p3",
+          "qty": 1
+        },
+        {
+          "productId": "p7",
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 12.13,
+        "tax": 1.37,
+        "ttc": 13.5
+      },
+      "status": "NEW",
+      "printStatus": "PRINTED",
+      "payment": {
+        "provider": "Stripe",
+        "status": "PAID",
+        "sessionId": "cs_test_b1auhYYvacsix7hFqYhy4rIiOhwMvfV8yX9EiwWj1mRhcdssp9UanNPZTV",
+        "paymentIntent": "pi_3U3O62KwpT0mcZzm2TCD3fn7",
+        "paidAt": "2026-08-11T22:25:03.221Z"
+      },
+      "createdAt": "2026-08-11T22:24:33.045Z",
+      "note": "",
+      "billing": null,
+      "printedAt": "2026-08-11T22:25:03.256Z"
+    },
+    {
+      "id": "65448281-dbb1-41d2-b225-c4c6804e3f4f",
+      "number": 1045,
+      "laneId": "l1",
+      "lane": 1,
+      "locationLabel": "Piste 1-2",
+      "customerFirstName": "flo",
+      "items": [
+        {
+          "productId": "oby-apple-hennessy-royal",
+          "name": "Apple Hennessy Royal",
+          "sku": "OBY-APPLE-HENNESSY-ROYAL",
+          "priceHt": 15.67,
+          "taxRate": 8.5,
+          "qty": 1,
+          "components": []
+        },
+        {
+          "productId": "oby-mojito-sirop",
+          "name": "Mojito Sirop",
+          "sku": "OBY-MOJITO-SIROP",
+          "priceHt": 9.22,
+          "taxRate": 8.5,
+          "qty": 1,
+          "components": []
+        }
+      ],
+      "stockConsumptions": [
+        {
+          "productId": "oby-apple-hennessy-royal",
+          "qty": 1
+        },
+        {
+          "productId": "oby-mojito-sirop",
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 24.89,
+        "tax": 2.12,
+        "ttc": 27.01
+      },
+      "status": "NEW",
+      "printStatus": "PRINTED",
+      "payment": {
+        "provider": "Stripe",
+        "status": "PAID",
+        "sessionId": "cs_test_b1Smbiok4UyxjBn38Q1ANjhsTENcmhSMbxseUng1pcg77LxsvGwp9KFw8S",
+        "paymentIntent": "pi_3U3NnOKwpT0mcZzm0yf7HGnU",
+        "paidAt": "2026-08-11T22:05:35.412Z"
+      },
+      "createdAt": "2026-08-11T22:05:17.687Z",
+      "note": "",
+      "billing": null,
+      "printedAt": "2026-08-11T22:05:35.420Z"
+    },
+    {
+      "id": "39ebb628-d920-4a8d-9038-a626c0e150d0",
+      "number": 1044,
+      "laneId": "l1",
+      "lane": 1,
+      "locationLabel": "Piste 1-2",
+      "customerFirstName": "flo",
+      "items": [
+        {
+          "productId": "p7",
+          "name": "Mojito",
+          "sku": "OBY-MOJITO",
+          "priceHt": 9.22,
+          "taxRate": 8.5,
+          "qty": 1,
+          "components": []
+        }
+      ],
+      "stockConsumptions": [
+        {
+          "productId": "p7",
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 9.22,
+        "tax": 0.78,
+        "ttc": 10
+      },
+      "status": "NEW",
+      "printStatus": "PRINTED",
+      "payment": {
+        "provider": "Stripe",
+        "status": "PAID",
+        "sessionId": "cs_test_a1xIsRorSOseVCLvlprmZvfEeSkHVeSmdmE91yTOpuA54v1qBvKGrDW91M",
+        "paymentIntent": "pi_3U3Nl7KwpT0mcZzm2sl3LVGq",
+        "paidAt": "2026-08-11T22:03:13.362Z"
+      },
+      "createdAt": "2026-08-11T22:02:56.855Z",
+      "note": "",
+      "billing": null,
+      "printedAt": "2026-08-11T22:03:13.400Z"
+    },
+    {
+      "id": "feaa90b2-25f7-4968-a6cb-d68062907b9c",
+      "number": 1043,
+      "laneId": "l1",
+      "lane": 1,
+      "locationLabel": "Piste 1-2",
+      "customerFirstName": "flo",
+      "items": [
+        {
+          "productId": "p7",
+          "name": "Mojito",
+          "sku": "OBY-MOJITO",
+          "priceHt": 9.22,
+          "taxRate": 8.5,
+          "qty": 1,
+          "components": []
+        },
+        {
+          "productId": "oby-apple-hennessy",
+          "name": "Apple Hennessy",
+          "sku": "OBY-APPLE-HENNESSY",
+          "priceHt": 13.82,
+          "taxRate": 8.5,
+          "qty": 1,
+          "components": []
+        }
+      ],
+      "stockConsumptions": [
+        {
+          "productId": "p7",
+          "qty": 1
+        },
+        {
+          "productId": "oby-apple-hennessy",
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 23.04,
+        "tax": 1.96,
+        "ttc": 25
+      },
+      "status": "NEW",
+      "printStatus": "PRINTED",
+      "payment": {
+        "provider": "Stripe",
+        "status": "PAID",
+        "sessionId": "cs_test_b1aa5fauDwXPGNRnCTGAJyo1Rfa4NAUjtvsdRwzv3LKYCq3DrlWqYxfkNZ",
+        "paymentIntent": "pi_3U3NgkKwpT0mcZzm1l0nhc5F",
+        "paidAt": "2026-08-11T21:58:41.347Z"
+      },
+      "createdAt": "2026-08-11T21:58:25.708Z",
+      "note": "",
+      "billing": null,
+      "printedAt": "2026-08-11T21:58:41.376Z"
+    },
+    {
+      "id": "c5cdd05d-f8bc-4b05-a562-d3a44bb60dd4",
+      "number": 1042,
+      "laneId": "l1",
+      "lane": 1,
+      "locationLabel": "Piste 1-2",
+      "customerFirstName": "Florent",
+      "items": [
+        {
+          "productId": "p7",
+          "name": "Mojito",
+          "sku": "OBY-MOJITO",
+          "priceHt": 9.22,
+          "taxRate": 8.5,
+          "qty": 1,
+          "components": []
+        },
+        {
+          "productId": "oby-apple-hennessy",
+          "name": "Apple Hennessy",
+          "sku": "OBY-APPLE-HENNESSY",
+          "priceHt": 13.82,
+          "taxRate": 8.5,
+          "qty": 1,
+          "components": []
+        }
+      ],
+      "stockConsumptions": [
+        {
+          "productId": "p7",
+          "qty": 1
+        },
+        {
+          "productId": "oby-apple-hennessy",
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 23.04,
+        "tax": 1.96,
+        "ttc": 25
+      },
+      "status": "AWAITING_PAYMENT",
+      "printStatus": "PENDING",
+      "payment": {
+        "provider": "Stripe",
+        "status": "PENDING",
+        "sessionId": "cs_test_b1xKaIzlkDtVrIYobfO4vGH3KIORtZDvVfv1DvdTUdFdzQSv4qepE6pJqz"
+      },
+      "createdAt": "2026-08-11T21:53:49.621Z",
+      "note": "",
+      "billing": null
+    },
+    {
+      "id": "af8d9a24-7d29-4a96-b8db-712835cde920",
+      "number": 1041,
+      "laneId": "l1",
+      "lane": 1,
+      "locationLabel": "Piste 1",
+      "customerFirstName": "esetset",
+      "items": [
+        {
+          "productId": "oby-lavish-cosmopolitain",
+          "name": "Lavish Cosmopolitain 25cl",
+          "sku": "OBY-LAVISH-COSMOPOLITAIN",
+          "priceHt": 5.53,
+          "taxRate": 8.5,
+          "qty": 1,
+          "components": []
+        },
+        {
+          "productId": "p7",
+          "name": "Mojito",
+          "sku": "OBY-MOJITO",
+          "priceHt": 9.22,
+          "taxRate": 8.5,
+          "qty": 1,
+          "components": []
+        },
+        {
+          "productId": "oby-mojito-sirop",
+          "name": "Mojito Sirop",
+          "sku": "OBY-MOJITO-SIROP",
+          "priceHt": 9.22,
+          "taxRate": 8.5,
+          "qty": 1,
+          "components": []
+        },
+        {
+          "productId": "oby-apple-hennessy-royal",
+          "name": "Apple Hennessy Royal",
+          "sku": "OBY-APPLE-HENNESSY-ROYAL",
+          "priceHt": 15.67,
+          "taxRate": 8.5,
+          "qty": 1,
+          "components": []
+        }
+      ],
+      "stockConsumptions": [
+        {
+          "productId": "oby-lavish-cosmopolitain",
+          "qty": 1
+        },
+        {
+          "productId": "p7",
+          "qty": 1
+        },
+        {
+          "productId": "oby-mojito-sirop",
+          "qty": 1
+        },
+        {
+          "productId": "oby-apple-hennessy-royal",
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 39.64,
+        "tax": 3.37,
+        "ttc": 43.01
+      },
+      "status": "AWAITING_PAYMENT",
+      "printStatus": "PENDING",
+      "payment": {
+        "provider": "Stripe",
+        "status": "PENDING",
+        "sessionId": "cs_test_b1yyAJeRC7lqjp8sAokUHXXExzQJmzkDBNWEKywEEjlRpYSRNbuscjtBgC"
+      },
+      "createdAt": "2026-08-11T21:35:56.213Z",
+      "note": "",
+      "billing": null
+    },
+    {
+      "id": "7278c6b2-3241-414e-a34f-6d4ac382eccf",
+      "number": 1040,
+      "laneId": "l1",
+      "lane": 1,
+      "locationLabel": "Piste 1",
+      "customerFirstName": "tests",
+      "items": [
+        {
+          "productId": "p3",
+          "name": "Coca-Cola 33 cl",
+          "sku": "DRK-COCA",
+          "priceHt": 2.92,
+          "taxRate": 20,
+          "qty": 1,
+          "components": []
+        }
+      ],
+      "stockConsumptions": [
+        {
+          "productId": "p3",
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 2.92,
+        "tax": 0.58,
+        "ttc": 3.5
+      },
+      "status": "AWAITING_PAYMENT",
+      "printStatus": "PENDING",
+      "payment": {
+        "provider": "Stripe",
+        "status": "PENDING",
+        "sessionId": "cs_test_a1Y9GnQW4oi1iUt0Za4zzRnXdTgED0VFVvP7iYeUfv3teDyfQZtOcFEYPs"
+      },
+      "createdAt": "2026-08-11T21:30:27.640Z",
+      "note": "",
+      "billing": null
+    },
+    {
+      "id": "af7b6ae6-15d8-4423-b42a-0b46950b9ad3",
+      "number": 1039,
+      "laneId": "l1",
+      "lane": 1,
+      "locationLabel": "Piste 1",
+      "customerFirstName": "Flo",
+      "items": [
+        {
+          "productId": "p3",
+          "name": "Coca-Cola 33 cl",
+          "sku": "DRK-COCA",
+          "priceHt": 2.92,
+          "taxRate": 20,
+          "qty": 1,
+          "components": []
+        }
+      ],
+      "stockConsumptions": [
+        {
+          "productId": "p3",
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 2.92,
+        "tax": 0.58,
+        "ttc": 3.5
+      },
+      "status": "AWAITING_PAYMENT",
+      "printStatus": "PENDING",
+      "payment": {
+        "provider": "Stripe",
+        "status": "PENDING",
+        "sessionId": "cs_test_a1ZSKNh9njFboOxLpLxU5F2Va3K6NY7JETiETT2EPZ10C2V22l8WDKmYh4"
+      },
+      "createdAt": "2026-08-11T21:24:45.660Z",
+      "note": "",
+      "billing": null
+    },
+    {
+      "id": "3509ae88-d7a7-46da-8d01-147041bc133a",
+      "number": 1038,
+      "laneId": "l1",
+      "lane": 1,
+      "items": [
+        {
+          "productId": "p7",
+          "name": "Mojito",
+          "sku": "CKT-MOJITO",
+          "priceHt": 8.33,
+          "taxRate": 20,
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 8.33,
+        "tax": 1.67,
+        "ttc": 10
+      },
+      "status": "AWAITING_PAYMENT",
+      "printStatus": "PENDING",
+      "payment": {
+        "provider": "Stripe",
+        "status": "PENDING",
+        "sessionId": "cs_test_a1NryEGwAPbWKk9gmiGFGy2xRmuLuAjkY8vHEHGZ0CMRrQVx0cqjROoXLb"
+      },
+      "createdAt": "2026-08-11T21:06:59.977Z",
+      "note": "",
+      "billing": null
+    },
+    {
+      "id": "ea78b7d5-cb57-4784-8749-c2bdae6027fb",
+      "number": 1037,
+      "laneId": "l1",
+      "lane": 1,
+      "items": [
+        {
+          "productId": "p3",
+          "name": "Coca-Cola 33 cl",
+          "sku": "DRK-COCA",
+          "priceHt": 2.92,
+          "taxRate": 20,
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 2.92,
+        "tax": 0.58,
+        "ttc": 3.5
+      },
+      "status": "AWAITING_PAYMENT",
+      "printStatus": "PENDING",
+      "payment": {
+        "provider": "Stripe",
+        "status": "PENDING",
+        "sessionId": "cs_test_a18sjM32WMvdOlJq1ogmcurcQUzvSO3OHazGyuGDqWIzt9BDeVBt5MQlGV"
+      },
+      "createdAt": "2026-08-11T21:04:29.290Z",
+      "note": "",
+      "billing": null
+    },
+    {
+      "id": "2666e59b-2381-4147-b50f-5b19d52cf5b3",
+      "number": 1036,
+      "laneId": "l1",
+      "lane": 1,
+      "items": [
+        {
+          "productId": "p7",
+          "name": "Mojito",
+          "sku": "CKT-MOJITO",
+          "priceHt": 8.33,
+          "taxRate": 20,
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 8.33,
+        "tax": 1.67,
+        "ttc": 10
+      },
+      "status": "AWAITING_PAYMENT",
+      "printStatus": "PENDING",
+      "payment": {
+        "provider": "Stripe",
+        "status": "PENDING",
+        "sessionId": "cs_test_a1eCwC2iRg8HHWmdEYdWfkrsaJNauJGKpKX2Nm3bEwVPrvuoO4LtSDbYs2"
+      },
+      "createdAt": "2026-08-11T21:04:04.158Z",
+      "note": "",
+      "billing": null
+    },
+    {
+      "id": "085eda3c-5810-470a-8a2c-829a178f9234",
+      "number": 1035,
+      "laneId": "l1",
+      "lane": 1,
+      "items": [
+        {
+          "productId": "p7",
+          "name": "Mojito",
+          "sku": "CKT-MOJITO",
+          "priceHt": 8.33,
+          "taxRate": 20,
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 8.33,
+        "tax": 1.67,
+        "ttc": 10
+      },
+      "status": "AWAITING_PAYMENT",
+      "printStatus": "PENDING",
+      "payment": {
+        "provider": "Stripe",
+        "status": "PENDING"
+      },
+      "createdAt": "2026-08-11T21:03:01.444Z",
+      "note": "",
+      "billing": null
+    },
+    {
+      "id": "a5909225-1633-484f-87a3-0a43c80a0f1d",
+      "number": 1034,
+      "laneId": "l1",
+      "lane": 1,
+      "items": [
+        {
+          "productId": "p7",
+          "name": "Mojito",
+          "sku": "CKT-MOJITO",
+          "priceHt": 8.33,
+          "taxRate": 20,
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 8.33,
+        "tax": 1.67,
+        "ttc": 10
+      },
+      "status": "AWAITING_PAYMENT",
+      "printStatus": "PENDING",
+      "payment": {
+        "provider": "Stripe",
+        "status": "PENDING"
+      },
+      "createdAt": "2026-08-11T21:02:57.488Z",
+      "note": "",
+      "billing": null
+    },
+    {
+      "id": "ec64b979-667d-48ea-b4f1-8a27347f2762",
+      "number": 1033,
+      "laneId": "l1",
+      "lane": 1,
+      "items": [
+        {
+          "productId": "p7",
+          "name": "Mojito",
+          "sku": "CKT-MOJITO",
+          "priceHt": 8.33,
+          "taxRate": 20,
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 8.33,
+        "tax": 1.67,
+        "ttc": 10
+      },
+      "status": "AWAITING_PAYMENT",
+      "printStatus": "PENDING",
+      "payment": {
+        "provider": "Stripe",
+        "status": "PENDING",
+        "sessionId": "cs_live_a1QoCudeXintGLA5YnhsNGMmklNKxFvpwmpI7fFd2zwVJoJY9mBAWvO4tw"
+      },
+      "createdAt": "2026-08-11T20:46:20.510Z",
+      "note": "",
+      "billing": null
+    },
+    {
+      "id": "48ea6dcd-02ac-42cc-8eba-761ce3b9e53a",
+      "number": 1032,
+      "laneId": "l1",
+      "lane": 1,
+      "items": [
+        {
+          "productId": "p7",
+          "name": "Mojito",
+          "sku": "CKT-MOJITO",
+          "priceHt": 8.33,
+          "taxRate": 20,
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 8.33,
+        "tax": 1.67,
+        "ttc": 10
+      },
+      "status": "AWAITING_PAYMENT",
+      "printStatus": "PENDING",
+      "payment": {
+        "provider": "Stripe",
+        "status": "PENDING"
+      },
+      "createdAt": "2026-08-11T20:43:06.950Z",
+      "note": "",
+      "billing": null
+    },
+    {
+      "id": "441796e9-0d29-4df0-9a8f-f86614cdef4d",
+      "number": 1031,
+      "laneId": "l1",
+      "lane": 1,
+      "items": [
+        {
+          "productId": "p7",
+          "name": "Mojito",
+          "sku": "CKT-MOJITO",
+          "priceHt": 8.33,
+          "taxRate": 20,
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 8.33,
+        "tax": 1.67,
+        "ttc": 10
+      },
+      "status": "AWAITING_PAYMENT",
+      "printStatus": "PENDING",
+      "payment": {
+        "provider": "Stripe",
+        "status": "PENDING"
+      },
+      "createdAt": "2026-08-11T20:43:02.546Z",
+      "note": "",
+      "billing": null
+    },
+    {
+      "id": "ac1b31c9-3594-4a89-99b0-900b08d06085",
+      "number": 1030,
+      "laneId": "l1",
+      "lane": 1,
+      "items": [
+        {
+          "productId": "p7",
+          "name": "Mojito",
+          "sku": "CKT-MOJITO",
+          "priceHt": 8.33,
+          "taxRate": 20,
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 8.33,
+        "tax": 1.67,
+        "ttc": 10
+      },
+      "status": "AWAITING_PAYMENT",
+      "printStatus": "PENDING",
+      "payment": {
+        "provider": "Stripe",
+        "status": "PENDING"
+      },
+      "createdAt": "2026-08-11T20:42:58.090Z",
+      "note": "",
+      "billing": null
+    },
+    {
+      "id": "4e2fa4fa-0927-43c9-a5c3-1478e0ae7aa0",
+      "number": 1029,
+      "laneId": "l1",
+      "lane": 1,
+      "items": [
+        {
+          "productId": "p7",
+          "name": "Mojito",
+          "sku": "CKT-MOJITO",
+          "priceHt": 8.33,
+          "taxRate": 20,
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 8.33,
+        "tax": 1.67,
+        "ttc": 10
+      },
+      "status": "AWAITING_PAYMENT",
+      "printStatus": "PENDING",
+      "payment": {
+        "provider": "Stripe",
+        "status": "PENDING"
+      },
+      "createdAt": "2026-08-11T20:42:53.698Z",
+      "note": "",
+      "billing": null
+    },
+    {
+      "id": "bca1063e-2645-424d-be9e-59ee30e96a7c",
+      "number": 1028,
+      "laneId": "l1",
+      "lane": 1,
+      "items": [
+        {
+          "productId": "p7",
+          "name": "Mojito",
+          "sku": "CKT-MOJITO",
+          "priceHt": 8.33,
+          "taxRate": 20,
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 8.33,
+        "tax": 1.67,
+        "ttc": 10
+      },
+      "status": "AWAITING_PAYMENT",
+      "printStatus": "PENDING",
+      "payment": {
+        "provider": "Stripe",
+        "status": "PENDING"
+      },
+      "createdAt": "2026-08-11T20:42:49.090Z",
+      "note": "",
+      "billing": null
+    },
+    {
+      "id": "ef376316-97a1-489d-bd98-1a6a536b7bb8",
+      "number": 1027,
+      "laneId": "l1",
+      "lane": 1,
+      "items": [
+        {
+          "productId": "p7",
+          "name": "Mojito",
+          "sku": "CKT-MOJITO",
+          "priceHt": 8.33,
+          "taxRate": 20,
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 8.33,
+        "tax": 1.67,
+        "ttc": 10
+      },
+      "status": "AWAITING_PAYMENT",
+      "printStatus": "PENDING",
+      "payment": {
+        "provider": "Stripe",
+        "status": "PENDING"
+      },
+      "createdAt": "2026-08-11T20:42:43.918Z",
+      "note": "",
+      "billing": null
+    },
+    {
+      "id": "88a340d5-be70-410c-b279-dbff5e796e3b",
+      "number": 1026,
+      "laneId": "l1",
+      "lane": 1,
+      "items": [
+        {
+          "productId": "p7",
+          "name": "Mojito",
+          "sku": "CKT-MOJITO",
+          "priceHt": 8.33,
+          "taxRate": 20,
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 8.33,
+        "tax": 1.67,
+        "ttc": 10
+      },
+      "status": "AWAITING_PAYMENT",
+      "printStatus": "PENDING",
+      "payment": {
+        "provider": "Stripe",
+        "status": "PENDING"
+      },
+      "createdAt": "2026-08-11T20:42:39.622Z",
+      "note": "",
+      "billing": null
+    },
+    {
+      "id": "267512c7-71d8-485b-b999-5df2703de1d5",
+      "number": 1025,
+      "laneId": "l1",
+      "lane": 1,
+      "items": [
+        {
+          "productId": "p7",
+          "name": "Mojito",
+          "sku": "CKT-MOJITO",
+          "priceHt": 8.33,
+          "taxRate": 20,
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 8.33,
+        "tax": 1.67,
+        "ttc": 10
+      },
+      "status": "AWAITING_PAYMENT",
+      "printStatus": "PENDING",
+      "payment": {
+        "provider": "Stripe",
+        "status": "PENDING"
+      },
+      "createdAt": "2026-08-11T20:42:35.177Z",
+      "note": "",
+      "billing": null
+    },
+    {
+      "id": "7fcd7da7-2280-4ea7-a35b-3196c3a766ee",
+      "number": 1024,
+      "laneId": "l1",
+      "lane": 1,
+      "items": [
+        {
+          "productId": "p7",
+          "name": "Mojito",
+          "sku": "CKT-MOJITO",
+          "priceHt": 8.33,
+          "taxRate": 20,
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 8.33,
+        "tax": 1.67,
+        "ttc": 10
+      },
+      "status": "AWAITING_PAYMENT",
+      "printStatus": "PENDING",
+      "payment": {
+        "provider": "Stripe",
+        "status": "PENDING"
+      },
+      "createdAt": "2026-08-11T20:40:58.909Z",
+      "note": "",
+      "billing": null
+    },
     {
       "id": "59db34c2-1146-440d-a0b5-8ccd80dc8e2d",
       "number": 1023,
@@ -909,6 +2594,349 @@
   ],
   "audit": [
     {
+      "id": "cd08c8ed-5b4f-42b2-a333-899d5e376604",
+      "at": "2026-08-11T22:55:12.301Z",
+      "user": "Administrateur",
+      "action": "Catégorie supprimée",
+      "detail": "Cocktails sans alcool"
+    },
+    {
+      "id": "95960b7c-8a40-4afd-884a-315694bf216a",
+      "at": "2026-08-11T22:55:07.817Z",
+      "user": "Administrateur",
+      "action": "Catégorie supprimée",
+      "detail": "Cocktails"
+    },
+    {
+      "id": "f8f90503-c8bf-4be5-a340-b1f6b079f961",
+      "at": "2026-08-11T22:45:34.472Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1047 · Piste 1-2 · 15.00 €"
+    },
+    {
+      "id": "d8d5b012-b867-4fce-a25c-c44ea914c198",
+      "at": "2026-08-11T22:25:03.256Z",
+      "user": "Imprimante locale",
+      "action": "Ticket imprimé",
+      "detail": "#1046"
+    },
+    {
+      "id": "8c5be5a6-1395-46c6-b9df-bfc9506ba0f0",
+      "at": "2026-08-11T22:25:03.221Z",
+      "user": "Client",
+      "action": "Paiement Stripe confirmé",
+      "detail": "#1046 · 13.50 EUR"
+    },
+    {
+      "id": "532a13b1-f495-4502-9445-778bd16d4d7b",
+      "at": "2026-08-11T22:24:33.046Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1046 · Piste 1-2 · 13.50 €"
+    },
+    {
+      "id": "8dc965e3-8705-48c1-ae09-38863879d9db",
+      "at": "2026-08-11T22:07:05.395Z",
+      "user": "Administrateur",
+      "action": "Test imprimante réussi",
+      "detail": "192.168.1.6:9100"
+    },
+    {
+      "id": "c665525f-ff55-4ee1-bf88-2c524e10f739",
+      "at": "2026-08-11T22:07:05.350Z",
+      "user": "Administrateur",
+      "action": "Paramètres modifiés",
+      "detail": "Madiana Bowling by WP"
+    },
+    {
+      "id": "d8675a3b-0558-4a60-96fd-b89649af03a4",
+      "at": "2026-08-11T22:05:35.420Z",
+      "user": "Imprimante locale",
+      "action": "Ticket imprimé",
+      "detail": "#1045"
+    },
+    {
+      "id": "615b9a07-d82c-437d-93aa-81e1f7605170",
+      "at": "2026-08-11T22:05:35.412Z",
+      "user": "Client",
+      "action": "Paiement Stripe confirmé",
+      "detail": "#1045 · 27.00 EUR"
+    },
+    {
+      "id": "a7c4a167-29a9-45ab-b93e-a551906b043c",
+      "at": "2026-08-11T22:05:17.687Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1045 · Piste 1-2 · 27.01 €"
+    },
+    {
+      "id": "192b6092-72ff-42cd-a5f7-6e64c031a6b3",
+      "at": "2026-08-11T22:03:13.400Z",
+      "user": "Imprimante locale",
+      "action": "Ticket imprimé",
+      "detail": "#1044"
+    },
+    {
+      "id": "303e39aa-a115-4ad2-b7ad-2fd59267edc8",
+      "at": "2026-08-11T22:03:13.362Z",
+      "user": "Client",
+      "action": "Paiement Stripe confirmé",
+      "detail": "#1044 · 10.00 EUR"
+    },
+    {
+      "id": "56496a58-6fe5-4586-992c-9b3d9a2f812a",
+      "at": "2026-08-11T22:02:56.855Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1044 · Piste 1-2 · 10.00 €"
+    },
+    {
+      "id": "32921a78-0e15-4608-ab43-0dd613e49f72",
+      "at": "2026-08-11T21:58:41.376Z",
+      "user": "Imprimante locale",
+      "action": "Ticket imprimé",
+      "detail": "#1043"
+    },
+    {
+      "id": "453b4dc7-ac57-42e9-a935-5e81bc52d96f",
+      "at": "2026-08-11T21:58:41.347Z",
+      "user": "Client",
+      "action": "Paiement Stripe confirmé",
+      "detail": "#1043 · 24.99 EUR"
+    },
+    {
+      "id": "85cf18c1-bf0e-45f9-a577-d704d6a3abe1",
+      "at": "2026-08-11T21:58:25.708Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1043 · Piste 1-2 · 25.00 €"
+    },
+    {
+      "id": "c62f5d3f-bcb1-4d1d-9199-22380fbff8e6",
+      "at": "2026-08-11T21:53:49.622Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1042 · Piste 1-2 · 25.00 €"
+    },
+    {
+      "id": "5602528c-ae2b-4a87-84e1-af85cf7eda39",
+      "at": "2026-08-11T21:53:04.586Z",
+      "user": "Administrateur",
+      "action": "Paramètres modifiés",
+      "detail": "Madiana Bowling by WP"
+    },
+    {
+      "id": "f695c299-2c52-4914-a0f7-2caf582c5b30",
+      "at": "2026-08-11T21:52:21.470Z",
+      "user": "Administrateur",
+      "action": "Test imprimante réussi",
+      "detail": "192.168.1.6:9100"
+    },
+    {
+      "id": "3c2d286c-7513-40df-ad51-78167243b4bf",
+      "at": "2026-08-11T21:52:21.430Z",
+      "user": "Administrateur",
+      "action": "Paramètres modifiés",
+      "detail": "Madiana Bowling by WP"
+    },
+    {
+      "id": "2a6a2204-dd2f-41fe-a153-cd517112608e",
+      "at": "2026-08-11T21:48:31.959Z",
+      "user": "Administrateur",
+      "action": "Lien QR supprimé",
+      "detail": "Piste 8"
+    },
+    {
+      "id": "baaff5fc-cf0e-4d89-9e09-5ec4e2b3ed5f",
+      "at": "2026-08-11T21:48:27.279Z",
+      "user": "Administrateur",
+      "action": "Lien QR supprimé",
+      "detail": "Piste 7"
+    },
+    {
+      "id": "2bd8b952-ef80-4739-97b0-af088f5c185a",
+      "at": "2026-08-11T21:48:25.193Z",
+      "user": "Administrateur",
+      "action": "Lien QR supprimé",
+      "detail": "Piste 6"
+    },
+    {
+      "id": "9c65bffb-0408-4bf2-bdd1-5b7a5a188896",
+      "at": "2026-08-11T21:48:23.327Z",
+      "user": "Administrateur",
+      "action": "Lien QR supprimé",
+      "detail": "Piste 5"
+    },
+    {
+      "id": "5d4f11c6-e8a3-4986-ad69-a934f62e2788",
+      "at": "2026-08-11T21:48:20.473Z",
+      "user": "Administrateur",
+      "action": "Emplacement modifié",
+      "detail": "Piste 7-8"
+    },
+    {
+      "id": "6a5836d4-8038-4683-a97f-20fcfbd44acb",
+      "at": "2026-08-11T21:48:14.672Z",
+      "user": "Administrateur",
+      "action": "Emplacement modifié",
+      "detail": "Piste 6"
+    },
+    {
+      "id": "2ea29a4e-e89f-486e-81be-5477b01c2f60",
+      "at": "2026-08-11T21:48:07.656Z",
+      "user": "Administrateur",
+      "action": "Emplacement modifié",
+      "detail": "Piste 3-4"
+    },
+    {
+      "id": "bdce75e4-d114-4cc8-9f3a-4b9bc7a69d9a",
+      "at": "2026-08-11T21:47:59.988Z",
+      "user": "Administrateur",
+      "action": "Emplacement modifié",
+      "detail": "Piste 1-2"
+    },
+    {
+      "id": "d6457da1-8dbf-44cf-9926-37ee0efe5240",
+      "at": "2026-08-11T21:40:27.020Z",
+      "user": "Administrateur",
+      "action": "Produit modifié",
+      "detail": "Cheeseburger"
+    },
+    {
+      "id": "3f2b76f1-9ef5-4da6-aa1d-a7392ebce6cb",
+      "at": "2026-08-11T21:35:56.213Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1041 · Piste 1 · 43.01 €"
+    },
+    {
+      "id": "762a1dee-2d3d-459b-88d5-9b6734cff16e",
+      "at": "2026-08-11T21:30:27.640Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1040 · Piste 1 · 3.50 €"
+    },
+    {
+      "id": "c5bf193b-f085-4c1b-8ad8-6e59d4d14a0d",
+      "at": "2026-08-11T21:24:45.660Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1039 · Piste 1 · 3.50 €"
+    },
+    {
+      "id": "23941144-9185-4aa3-8957-26bf340ae802",
+      "at": "2026-08-11T21:06:59.977Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1038 · Piste 1 · 10.00 €"
+    },
+    {
+      "id": "0e8e5487-c0cd-4027-bfa0-d6a040f53563",
+      "at": "2026-08-11T21:06:18.686Z",
+      "user": "Administrateur",
+      "action": "Paramètres modifiés",
+      "detail": "Madiana Bowling by WP"
+    },
+    {
+      "id": "ba8cb337-801f-475a-9d2c-14e07a61f7b6",
+      "at": "2026-08-11T21:04:29.290Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1037 · Piste 1 · 3.50 €"
+    },
+    {
+      "id": "0a3cd236-d3cc-4212-a889-de6ecb004fcc",
+      "at": "2026-08-11T21:04:04.158Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1036 · Piste 1 · 10.00 €"
+    },
+    {
+      "id": "1971609d-3676-41be-b19f-9ab01fc6fe12",
+      "at": "2026-08-11T21:03:01.444Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1035 · Piste 1 · 10.00 €"
+    },
+    {
+      "id": "81aa38a6-f6b9-42fa-8ebb-b7dec59b49b2",
+      "at": "2026-08-11T21:02:57.489Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1034 · Piste 1 · 10.00 €"
+    },
+    {
+      "id": "05055fb4-2fd3-4691-859b-df0cb6b3762e",
+      "at": "2026-08-11T20:46:20.511Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1033 · Piste 1 · 10.00 €"
+    },
+    {
+      "id": "a9f57464-5157-4bb5-9d93-ff5bbfed3372",
+      "at": "2026-08-11T20:43:06.950Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1032 · Piste 1 · 10.00 €"
+    },
+    {
+      "id": "4bf712b0-b729-4441-a3ad-c45b01b5c0fd",
+      "at": "2026-08-11T20:43:02.546Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1031 · Piste 1 · 10.00 €"
+    },
+    {
+      "id": "41344472-bf48-4edb-8e29-d1404aa52841",
+      "at": "2026-08-11T20:42:58.090Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1030 · Piste 1 · 10.00 €"
+    },
+    {
+      "id": "d797d05b-e63a-45b5-9e22-8a362a6d094b",
+      "at": "2026-08-11T20:42:53.698Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1029 · Piste 1 · 10.00 €"
+    },
+    {
+      "id": "ea426cc2-1664-4dfb-b65f-f220d9d5306e",
+      "at": "2026-08-11T20:42:49.090Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1028 · Piste 1 · 10.00 €"
+    },
+    {
+      "id": "09d5a8fa-d465-43b7-9556-b1d290edb6a9",
+      "at": "2026-08-11T20:42:43.918Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1027 · Piste 1 · 10.00 €"
+    },
+    {
+      "id": "272e9f88-c8f1-4d9a-9ed4-273771e51ee7",
+      "at": "2026-08-11T20:42:39.622Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1026 · Piste 1 · 10.00 €"
+    },
+    {
+      "id": "0699e54f-6e00-444e-9035-fbd46af0127e",
+      "at": "2026-08-11T20:42:35.177Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1025 · Piste 1 · 10.00 €"
+    },
+    {
+      "id": "4a535a1f-21ba-4802-8076-054e8fc52c28",
+      "at": "2026-08-11T20:40:58.910Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1024 · Piste 1 · 10.00 €"
+    },
+    {
       "id": "5109b44f-80a9-4ea3-96af-0815826710b9",
       "at": "2026-08-11T20:21:58.637Z",
       "user": "Client",
@@ -1090,5 +3118,82 @@
       "action": "Commande créée",
       "detail": "#1001 · Piste 1 · 3.50 €"
     }
-  ]
+  ],
+  "optionSets": [
+    {
+      "id": "set-desperados",
+      "name": "Choix Desperados",
+      "groups": [
+        {
+          "id": "desperados",
+          "name": "Choix de la Desperados",
+          "required": true,
+          "choices": [
+            {
+              "id": "original",
+              "name": "Desperados Original",
+              "priceTtcDelta": 0
+            },
+            {
+              "id": "red",
+              "name": "Desperados Red",
+              "priceTtcDelta": 0
+            },
+            {
+              "id": "mojito",
+              "name": "Desperados Mojito",
+              "priceTtcDelta": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "set-sirops",
+      "name": "Choix du sirop",
+      "groups": [
+        {
+          "id": "sirop",
+          "name": "Parfum du sirop",
+          "required": true,
+          "choices": [
+            {
+              "id": "fraise",
+              "name": "Fraise",
+              "priceTtcDelta": 0
+            },
+            {
+              "id": "passion",
+              "name": "Passion",
+              "priceTtcDelta": 0
+            },
+            {
+              "id": "mangue",
+              "name": "Mangue",
+              "priceTtcDelta": 0
+            },
+            {
+              "id": "peche",
+              "name": "Pêche",
+              "priceTtcDelta": 0
+            },
+            {
+              "id": "grenadine",
+              "name": "Grenadine",
+              "priceTtcDelta": 0
+            },
+            {
+              "id": "violette",
+              "name": "Violette",
+              "priceTtcDelta": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "migrations": {
+    "obypayTtcCanonical": true,
+    "defaultCocktailPush": true
+  }
 }
