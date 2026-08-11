@@ -32,11 +32,11 @@ Pour tester depuis un autre téléphone/tablette du même Wi‑Fi, utilisez l'ad
 
 La persistance de cette démo est stockée dans `data.json`. Pour une production, remplacer ce fichier par PostgreSQL (base managée) et les sessions mémoire par un stockage partagé.
 
-## Paiement CB Monetico CIC
+## Paiement CB Stripe (module actif)
 
-Le module client actif est Monetico CIC. Renseignez dans `.env` : `CIC_TPE`, `CIC_SOCIETE`, `CIC_KEY`, `CIC_MODE=test` et `PUBLIC_BASE_URL=https://pay.westparadise.fr`. Déclarez auprès de Monetico l'URL de notification : `https://pay.westparadise.fr/api/payments/cic/notify`. Passez à `CIC_MODE=production` uniquement après l'homologation de votre TPE.
+Le parcours client utilise Stripe Checkout. Aucune donnée de carte ne transite par MB-WP Pay. Une commande reste en attente et n'apparaît au bar qu'après réception du webhook Stripe signé `checkout.session.completed`.
 
-## Option Stripe
+## Configuration Stripe
 
 Le module crée une session Stripe Checkout : aucune donnée de carte ne transite par MB-WP Pay. Une commande reste en attente et n'est visible par le bar qu'après le webhook Stripe signé `checkout.session.completed`.
 

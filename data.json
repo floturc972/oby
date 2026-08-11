@@ -115,7 +115,7 @@
       "priceHt": 2.92,
       "taxRate": 20,
       "cost": 0.65,
-      "stock": 90,
+      "stock": 88,
       "active": true,
       "featured": false,
       "image": ""
@@ -129,7 +129,7 @@
       "priceHt": 5.83,
       "taxRate": 20,
       "cost": 1.6,
-      "stock": 41,
+      "stock": 34,
       "active": true,
       "featured": false,
       "image": ""
@@ -171,7 +171,7 @@
       "priceHt": 8.33,
       "taxRate": 20,
       "cost": 2.5,
-      "stock": 37,
+      "stock": 34,
       "active": true,
       "featured": true,
       "image": ""
@@ -228,6 +228,324 @@
     }
   ],
   "orders": [
+    {
+      "id": "59db34c2-1146-440d-a0b5-8ccd80dc8e2d",
+      "number": 1023,
+      "laneId": "l1",
+      "lane": 1,
+      "items": [
+        {
+          "productId": "p3",
+          "name": "Coca-Cola 33 cl",
+          "sku": "DRK-COCA",
+          "priceHt": 2.92,
+          "taxRate": 20,
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 2.92,
+        "tax": 0.58,
+        "ttc": 3.5
+      },
+      "status": "AWAITING_PAYMENT",
+      "printStatus": "PENDING",
+      "payment": {
+        "provider": "Stripe",
+        "status": "PENDING"
+      },
+      "createdAt": "2026-08-11T20:21:58.637Z",
+      "note": "",
+      "billing": null
+    },
+    {
+      "id": "c4c0ee97-4e1f-472f-b694-1fdf0aea54f9",
+      "number": 1022,
+      "laneId": "l1",
+      "lane": 1,
+      "items": [
+        {
+          "productId": "p4",
+          "name": "Bière locale",
+          "sku": "DRK-HEIN",
+          "priceHt": 5.83,
+          "taxRate": 20,
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 5.83,
+        "tax": 1.17,
+        "ttc": 7
+      },
+      "status": "AWAITING_PAYMENT",
+      "printStatus": "PENDING",
+      "payment": {
+        "provider": "Stripe",
+        "status": "PENDING"
+      },
+      "createdAt": "2026-08-11T20:17:59.346Z",
+      "note": "",
+      "billing": null
+    },
+    {
+      "id": "e687d677-7c68-4ab6-9484-93597978d5ea",
+      "number": 1021,
+      "laneId": "l1",
+      "lane": 1,
+      "items": [
+        {
+          "productId": "p4",
+          "name": "Bière locale",
+          "sku": "DRK-HEIN",
+          "priceHt": 5.83,
+          "taxRate": 20,
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 5.83,
+        "tax": 1.17,
+        "ttc": 7
+      },
+      "status": "AWAITING_PAYMENT",
+      "printStatus": "PENDING",
+      "payment": {
+        "provider": "Stripe",
+        "status": "PENDING"
+      },
+      "createdAt": "2026-08-11T20:16:42.285Z",
+      "note": "",
+      "billing": null
+    },
+    {
+      "id": "2d27f332-fda8-484e-8f29-780fd956f4fe",
+      "number": 1020,
+      "laneId": "l1",
+      "lane": 1,
+      "items": [
+        {
+          "productId": "p4",
+          "name": "Bière locale",
+          "sku": "DRK-HEIN",
+          "priceHt": 5.83,
+          "taxRate": 20,
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 5.83,
+        "tax": 1.17,
+        "ttc": 7
+      },
+      "status": "AWAITING_PAYMENT",
+      "printStatus": "PENDING",
+      "payment": {
+        "provider": "Stripe",
+        "status": "PENDING"
+      },
+      "createdAt": "2026-08-11T20:16:37.474Z",
+      "note": "",
+      "billing": null
+    },
+    {
+      "id": "2fb966de-09e8-4033-a089-529a164a905b",
+      "number": 1019,
+      "laneId": "l1",
+      "lane": 1,
+      "items": [
+        {
+          "productId": "p4",
+          "name": "Bière locale",
+          "sku": "DRK-HEIN",
+          "priceHt": 5.83,
+          "taxRate": 20,
+          "qty": 3
+        }
+      ],
+      "total": {
+        "ht": 17.49,
+        "tax": 3.5,
+        "ttc": 20.99
+      },
+      "status": "AWAITING_PAYMENT",
+      "printStatus": "PENDING",
+      "payment": {
+        "provider": "CIC",
+        "status": "PENDING"
+      },
+      "createdAt": "2026-08-11T20:07:54.244Z",
+      "note": "",
+      "billing": {
+        "firstName": "",
+        "lastName": "",
+        "addressLine1": "lam",
+        "city": "lamentun",
+        "postalCode": "97232",
+        "country": "FR"
+      }
+    },
+    {
+      "id": "5e84baac-55db-4c9c-a18c-55081cce0a2c",
+      "number": 1018,
+      "laneId": "l1",
+      "lane": 1,
+      "items": [
+        {
+          "productId": "p7",
+          "name": "Mojito",
+          "sku": "CKT-MOJITO",
+          "priceHt": 8.33,
+          "taxRate": 20,
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 8.33,
+        "tax": 1.67,
+        "ttc": 10
+      },
+      "status": "AWAITING_PAYMENT",
+      "printStatus": "PENDING",
+      "payment": {
+        "provider": "CIC",
+        "status": "PENDING"
+      },
+      "createdAt": "2026-08-11T20:01:27.291Z",
+      "note": "",
+      "billing": {
+        "firstName": "Flo",
+        "lastName": "Bar",
+        "addressLine1": "lamentin",
+        "city": "le lamentin",
+        "postalCode": "97232",
+        "country": "FR"
+      }
+    },
+    {
+      "id": "8a8932fe-740c-4802-acd9-1b5f1efe7676",
+      "number": 1017,
+      "laneId": "l1",
+      "lane": 1,
+      "items": [
+        {
+          "productId": "p3",
+          "name": "Coca-Cola 33 cl",
+          "sku": "DRK-COCA",
+          "priceHt": 2.92,
+          "taxRate": 20,
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 2.92,
+        "tax": 0.58,
+        "ttc": 3.5
+      },
+      "status": "AWAITING_PAYMENT",
+      "printStatus": "PENDING",
+      "payment": {
+        "provider": "CIC",
+        "status": "PENDING"
+      },
+      "createdAt": "2026-08-11T19:51:39.002Z",
+      "note": "",
+      "billing": {
+        "firstName": "Florent",
+        "lastName": "Barbier",
+        "addressLine1": "Armes",
+        "city": "Le lamentin",
+        "postalCode": "97232",
+        "country": "FR"
+      }
+    },
+    {
+      "id": "ac00524e-089a-485f-8a02-f34e668eaeb5",
+      "number": 1016,
+      "laneId": "l1",
+      "lane": 1,
+      "items": [
+        {
+          "productId": "p4",
+          "name": "Bière locale",
+          "sku": "DRK-HEIN",
+          "priceHt": 5.83,
+          "taxRate": 20,
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 5.83,
+        "tax": 1.17,
+        "ttc": 7
+      },
+      "status": "AWAITING_PAYMENT",
+      "printStatus": "PENDING",
+      "payment": {
+        "provider": "CIC",
+        "status": "PENDING"
+      },
+      "createdAt": "2026-08-11T00:05:59.112Z",
+      "note": ""
+    },
+    {
+      "id": "0863d71b-f3eb-4b7d-913e-3e706bca8d4f",
+      "number": 1015,
+      "laneId": "l1",
+      "lane": 1,
+      "items": [
+        {
+          "productId": "p7",
+          "name": "Mojito",
+          "sku": "CKT-MOJITO",
+          "priceHt": 8.33,
+          "taxRate": 20,
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 8.33,
+        "tax": 1.67,
+        "ttc": 10
+      },
+      "status": "AWAITING_PAYMENT",
+      "printStatus": "PENDING",
+      "payment": {
+        "provider": "CIC",
+        "status": "PENDING"
+      },
+      "createdAt": "2026-08-11T00:04:14.811Z",
+      "note": ""
+    },
+    {
+      "id": "92be9787-a2dd-4175-b161-bee3ac5d25dd",
+      "number": 1014,
+      "laneId": "l1",
+      "lane": 1,
+      "items": [
+        {
+          "productId": "p7",
+          "name": "Mojito",
+          "sku": "CKT-MOJITO",
+          "priceHt": 8.33,
+          "taxRate": 20,
+          "qty": 1
+        }
+      ],
+      "total": {
+        "ht": 8.33,
+        "tax": 1.67,
+        "ttc": 10
+      },
+      "status": "AWAITING_PAYMENT",
+      "printStatus": "PENDING",
+      "payment": {
+        "provider": "CIC",
+        "status": "PENDING"
+      },
+      "createdAt": "2026-08-11T00:01:46.924Z",
+      "note": ""
+    },
     {
       "id": "35174056-fe66-4e7e-86e0-1896348833fe",
       "number": 1013,
@@ -590,6 +908,76 @@
     }
   ],
   "audit": [
+    {
+      "id": "5109b44f-80a9-4ea3-96af-0815826710b9",
+      "at": "2026-08-11T20:21:58.637Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1023 · Piste 1 · 3.50 €"
+    },
+    {
+      "id": "6ca7cfbe-5b1a-4885-9158-aaf30a5d4d96",
+      "at": "2026-08-11T20:17:59.346Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1022 · Piste 1 · 7.00 €"
+    },
+    {
+      "id": "1d9766c2-cc6e-460c-b214-5002e2d0c1a2",
+      "at": "2026-08-11T20:16:42.285Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1021 · Piste 1 · 7.00 €"
+    },
+    {
+      "id": "733dd7ea-16d5-4d83-9b14-c843bdd2d8e1",
+      "at": "2026-08-11T20:16:37.474Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1020 · Piste 1 · 7.00 €"
+    },
+    {
+      "id": "051706ac-3ef6-41b3-a127-d71be101f136",
+      "at": "2026-08-11T20:07:54.244Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1019 · Piste 1 · 20.99 €"
+    },
+    {
+      "id": "d4d3e0f4-6d86-48f7-bf6c-7647d703f6fe",
+      "at": "2026-08-11T20:01:27.291Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1018 · Piste 1 · 10.00 €"
+    },
+    {
+      "id": "63129aa5-018d-4ef1-bff3-587d79f0a651",
+      "at": "2026-08-11T19:51:39.002Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1017 · Piste 1 · 3.50 €"
+    },
+    {
+      "id": "19c42eed-6f14-45a5-ba03-35d09bb6f8ee",
+      "at": "2026-08-11T00:05:59.112Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1016 · Piste 1 · 7.00 €"
+    },
+    {
+      "id": "6c1e2d82-8640-4a32-944f-41c4ab8af89c",
+      "at": "2026-08-11T00:04:14.812Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1015 · Piste 1 · 10.00 €"
+    },
+    {
+      "id": "4f012b0f-bd39-4db0-bda0-ee406ea3903a",
+      "at": "2026-08-11T00:01:46.924Z",
+      "user": "Client",
+      "action": "Commande créée",
+      "detail": "#1014 · Piste 1 · 10.00 €"
+    },
     {
       "id": "25282d06-f34b-4406-b91b-b0de8927164b",
       "at": "2026-08-10T23:01:12.051Z",
